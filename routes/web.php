@@ -15,7 +15,8 @@ use App\Http\Controllers\CreatioBonusController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+//    return view('welcome');
+    return abort('404');
 });
 
 Route::prefix('creatio')->group(function () {

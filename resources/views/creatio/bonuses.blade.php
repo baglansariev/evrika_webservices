@@ -41,7 +41,7 @@
                                 @if(isset($bonus_result) && !empty($bonus_result) && !isset($bonus_result['message']))
                                     <div class="bonus-info-block">
                                         <div class="block-row d-flex">
-                                            <div class="block-col">Ф.И.О рользователя</div>
+                                            <div class="block-col">Ф.И.О пользователя</div>
                                             <div class="block-col">{{ $bonus_result['name'] ?? '' }}</div>
                                         </div>
                                         <div class="block-row d-flex">
