@@ -20,23 +20,23 @@
                                 <p class="text-center">Проверка бонусов</p>
                             </div>
                             <div class="card-body">
-                                <form action="" class="bonus-form mb-5" style="width: 100%;">
-                                    <div class="form-row mb-4">
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <label for="bonusNumber">Номер телефона или карты</label>
-                                                <input type="number" id="bonusNumber" class="form-control" name="number" value="{{ request('number') ?? '' }}">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="col-sm-12">
-                                            <div class="form-group text-center">
-                                                <button class="btn btn-lg btn-success" type="submit">Проверить</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
+{{--                                <form action="" class="bonus-form mb-5" style="width: 100%;">--}}
+{{--                                    <div class="form-row mb-4">--}}
+{{--                                        <div class="col-sm-12">--}}
+{{--                                            <div class="form-group">--}}
+{{--                                                <label for="bonusNumber">Номер телефона или карты</label>--}}
+{{--                                                <input type="number" id="bonusNumber" class="form-control" name="number" value="{{ request('number') ?? '' }}">--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="form-row">--}}
+{{--                                        <div class="col-sm-12">--}}
+{{--                                            <div class="form-group text-center">--}}
+{{--                                                <button class="btn btn-lg btn-success" type="submit">Проверить</button>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </form>--}}
 
                                 @if(isset($bonus_result) && !empty($bonus_result) && !isset($bonus_result['message']))
                                     <div class="bonus-info-block">
