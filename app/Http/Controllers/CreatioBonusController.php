@@ -19,9 +19,9 @@ class CreatioBonusController extends Controller
                 $bonus_result = [
                     'name' => $abmLoyalty->getUserName(),
                     'birthday' => $abmLoyalty->getUserBirthday(),
-                    'balance' => $abmLoyalty->getBalance(),
-                    'available' => $abmLoyalty->getAvailableBalance(),
-                    'blocked' => $abmLoyalty->getBlockedBalance(),
+                    'balance' => (int)$abmLoyalty->getBalance(),
+                    'available' => (int)$abmLoyalty->getAvailableBalance(),
+                    'blocked' => (int)$abmLoyalty->getBlockedBalance(),
                 ];
             }
         }
